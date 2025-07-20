@@ -2,58 +2,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
 /* shared styles */
-.display-flex{
+.display-flex {
     display: flex;
 }
+
 .primary-text-color {
     color: rgba(58, 58, 58, 1);
 }
+
 /* navbar styles
  */
- .navbar{
+.navbar {
     justify-content: space-around;
- }
- .nav-title {
+}
+
+.nav-title {
     font-weight: 700;
     font-size: 24px;
- }
+}
 
- .nav-links{
+.nav-links {
     align-items: center;
- }
+}
+
 .nav-links a {
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
 
 }
+
 .nav-item {
     list-style: none;
     margin-right: 20px;
 }
+
 /* banner section */
-.banner{
+.banner {
     justify-content: space-evenly;
 }
-.journey{
+
+.journey {
     align-content: center;
 
 }
-.banner-title{
+
+.banner-title {
     font-weight: 700;
     font-size: 52px;
     margin-bottom: 16px;
 }
-.banner-description{
+
+.banner-description {
     font-weight: 600;
     font-size: 16px;
 }
-.banner-btn{
+
+.banner-btn {
     background-color: rgba(224, 44, 109, 1);
     font-weight: 700;
     font-size: 16px;
@@ -61,98 +72,179 @@
     color: white;
     padding: 10px 20px;
 }
-.banner-img{
+
+.banner-img {
     background-image: url(/images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 /* partners logos styles*/
-.partners{
+.partners {
     max-width: 1110px;
     margin: 0px auto;
     justify-content: space-around;
     padding: 40px 0px;
 }
+
 /* collections styles */
-.collections{
+.collections {
     max-width: 1050px;
-    margin: 0px  auto;
+    margin: 0px auto;
     margin-top: 100px;
 
 }
-.collections-title{
+
+.collections-title {
     text-align: center;
     font-weight: 600;
     font-size: 28px;
 }
-.card-container{
+
+.card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-.contents-card{
+
+.contents-card {
     width: 300px;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
-.content-title{
+
+.content-title {
     font-weight: 500;
     font-size: 28px;
     color: rgba(24, 25, 31, 1);
     margin-top: 0px;
     margin-bottom: 6px;
 }
-.content-price{
+
+.content-price {
     font-weight: 400;
     font-size: 24px;
     color: rgba(0, 0, 0, 0.87);
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.stars{
+
+.stars {
     color: rgba(251, 130, 0, 1);
     margin-bottom: 0px;
 }
+
 /* .star{
     width: 21px;
     height: 21px;
 } */
- .number{
+.number {
     font-weight: 700;
     font-size: 14px;
     color: rgba(94, 99, 102, 1);
- }
- .content-description{
+}
+
+.content-description {
     font-weight: 700;
     font-size: 14px;
     color: rgba(120, 120, 133, 1);
     margin-top: 0px;
+}
+
+.see-more {
+    text-align: end;
+    color: rgba(224, 44, 109, 0.87);
+}
+
+/* feature product styles */
+.features {
+    max-width: 1110px;
+    margin: 0px auto;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+.features-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.feature-text {
+    align-content: center;
  }
+
+.feature-text-title {
+    font-weight: 700;
+    font-size: 38px;
+    color: rgba(10, 8, 38, 1);
+
+}
+
+.feature-text-description {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(108, 108, 108, 1);
+}
+
+.feature-text-btn {
+    background-color: rgba(224, 44, 109, 1);
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+}
+/* footer styles */
+
+footer{
+    background-color: darkslategrey;
+    text-align: center;
+}
+.title{
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 0px;
+    
+}
+.copy-right, .all-right{
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+}
 
 /* media query styles */
 @media screen and (max-width:576px) {
     .navbar {
         flex-direction: column;
     }
+
     .banner {
         flex-direction: column-reverse;
     }
-    .journey{
+
+    .journey {
         text-align: center;
     }
+
     .banner-img {
         background-size: 100%;
-        
+
     }
-    .partners{
+
+    .partners {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+
     /* for popular collection */
-    .card-container{
+    .card-container {
         grid-template-columns: repeat(1, 1fr);
-        
+
     }
-    
+    /* for features */
+    .features-container{
+        flex-direction: column-reverse;
+    }
+
 }
