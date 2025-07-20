@@ -1,4 +1,4 @@
-
+/* font styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .poppins-regular {
@@ -73,6 +73,62 @@
     justify-content: space-around;
     padding: 40px 0px;
 }
+/* collections styles */
+.collections{
+    max-width: 1050px;
+    margin: 0px  auto;
+    margin-top: 100px;
+
+}
+.collections-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.contents-card{
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.content-title{
+    font-weight: 500;
+    font-size: 28px;
+    color: rgba(24, 25, 31, 1);
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+.content-price{
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.stars{
+    color: rgba(251, 130, 0, 1);
+    margin-bottom: 0px;
+}
+/* .star{
+    width: 21px;
+    height: 21px;
+} */
+ .number{
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(94, 99, 102, 1);
+ }
+ .content-description{
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(120, 120, 133, 1);
+    margin-top: 0px;
+ }
 
 /* media query styles */
 @media screen and (max-width:576px) {
@@ -92,6 +148,11 @@
     .partners{
         flex-wrap: wrap;
         justify-content: space-evenly;
+    }
+    /* for popular collection */
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        
     }
     
 }
