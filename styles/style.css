@@ -66,6 +66,14 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+/* partners logos styles*/
+.partners{
+    max-width: 1110px;
+    margin: 0px auto;
+    justify-content: space-around;
+    padding: 40px 0px;
+}
+
 /* media query styles */
 @media screen and (max-width:576px) {
     .navbar {
@@ -74,9 +82,16 @@
     .banner {
         flex-direction: column-reverse;
     }
+    .journey{
+        text-align: center;
+    }
     .banner-img {
         background-size: 100%;
         
+    }
+    .partners{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
     
 }
