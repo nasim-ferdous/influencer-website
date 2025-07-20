@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.primary-text-color {
+    color: rgba(58, 58, 58, 1);
+}
+/* navbar styles
+ */
+ .navbar{
+    justify-content: space-around;
+ }
+ .nav-title {
+    font-weight: 700;
+    font-size: 24px;
+ }
+
+ .nav-links{
+    align-items: center;
+ }
+.nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+.nav-item {
+    list-style: none;
+    margin-right: 20px;
+}
+/* banner section */
+.banner{
+    justify-content: space-evenly;
+}
+.journey{
+    align-content: center;
+
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 52px;
+    margin-bottom: 16px;
+}
+.banner-description{
+    font-weight: 600;
+    font-size: 16px;
+}
+.banner-btn{
+    background-color: rgba(224, 44, 109, 1);
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 41px;
+    color: white;
+    padding: 10px 20px;
+}
+.banner-img{
+    background-image: url(/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* media query styles */
+@media screen and (max-width:576px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .banner {
+        flex-direction: column-reverse;
+    }
+    .banner-img {
+        background-size: 100%;
+        
+    }
+    
+}
